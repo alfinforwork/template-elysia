@@ -1,15 +1,7 @@
-# Elysia with Bun runtime
+# how to run?
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
-```
+yarn|npm dev
 
-## Development
-To start the development server run:
-```bash
-bun run dev
-```
+# how to run with pm2?
 
-Open http://localhost:3000/ with your browser to see the result.
+https://bun.sh/guides/ecosystem/pm2
