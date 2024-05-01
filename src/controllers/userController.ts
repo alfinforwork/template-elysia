@@ -1,10 +1,16 @@
 import Elysia, { Context, RouteSchema } from "elysia";
 import response from "../../core/response";
+import UserService from "../services/user.service";
+
+const userService = new UserService();
 
 const userController = {
-  profile: (req: Context) => {
+  profile: async (req: Context) => {
+    const user = await userService.findOneById(0);
+
     return response({
       data: {
+        ...user,
         name: "alfin",
         email: "alfinforwork@gmail.com",
       },
